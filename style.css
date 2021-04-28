@@ -91,7 +91,7 @@ footer {
 
 .header__top__box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
     background-color: #ffffff;
     padding-bottom: 24px;
 }
