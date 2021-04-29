@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Store</title>
 </head>
 <body>
@@ -22,14 +22,12 @@
                         </a>
                     </div>
                     <div class="search">
-                        <button class="browse__button__menu">
-                            <details>
-                                <summary class="browse__text">
-                                    <span class="browse__element">Browse</span>
-                                    <i class="fa fa-caret-down"></i>
-                                </summary>
-                            </details>
-                        </button>
+                        <details class="browse__button__menu">
+                            <summary class="browse__text">
+                                <span class="browse__element">Browse</span>
+                                <i class="fa fa-caret-down"></i>
+                            </summary>
+                        </details>
                         <form class="search__area" action="#" method="post">
                             <input class="browse__text search__bar" type="search" placeholder="Search for Item...">
                             <button class="search__area__lens" type="Submit">
@@ -42,16 +40,12 @@
                     <a href="#">
                         <img class="cart__pic" src="image/cart.svg" alt="cart">
                     </a>
-                    <button>
-                        <details>
-                            <summary class="account">
-                                <span>My Account 
-                                    <i class="fa fa-caret-down caret-account">
-                                    </i>
-                                </span>
-                            </summary>
-                        </details>
-                    </button>
+                    <details>
+                        <summary class="account">
+                            <span>My Account</span>
+                            <i class="fa fa-caret-down caret-account"></i>
+                        </summary>
+                    </details>
                 </div>
             </div>
         </div>
@@ -71,63 +65,171 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="main__banner">
-            <div class="container background__container">
-                <div class="brand">
-                    <h2 class="top__brand">the brand</h2>
-                    <p class="bottom__brand"><span>of luxerious </span>fashion</p>
-                </div>
+    <div class="main__banner">
+        <div class="container background__container">
+            <div class="brand">
+                <h2 class="top__brand">the brand</h2>
+                <p class="bottom__brand"><span>of luxerious </span>fashion</p>
             </div>
         </div>
-        <div class="container">
-            <div class="offers">
-                <div class="left__column">
-                    <a href="#">
-                        <div class="left__top__offer">
-                            <div class="white__block">
-                                <div class="offer__message">
-                                    <p class="offer__text black_p">hot deal</p>
-                                    <p class="offer__text pink_p">for men</p>
-                                </div>
+    </div>
+    <div class="container">
+        <div class="offers">
+            <div class="left__column">
+                <a href="#">
+                    <div class="left__top__offer">
+                        <div class="white__block">
+                            <div class="offer__message">
+                                <p class="offer__text black_p">hot deal</p>
+                                <p class="offer__text pink_p">for men</p>
                             </div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="left__bottom__offer">
-                            <div class="white__block">
-                                <div class="offer__message">
-                                    <p class="offer__text black_p">luxurious & trendy</p>
-                                    <p class="offer__text pink_p">accessories</p>
-                                </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="left__bottom__offer">
+                        <div class="white__block">
+                            <div class="offer__message">
+                                <p class="offer__text black_p">luxurious & trendy</p>
+                                <p class="offer__text pink_p">accessories</p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="right__column">
-                    <a href="#">
-                        <div class="right__top__offer">
-                            <div class="white__block">
-                                <div class="offer__message">
-                                    <p class="offer__text black_p">30% offer</p>
-                                    <p class="offer__text pink_p">women</p>
-                                </div>
+                    </div>
+                </a>
+            </div>
+            <div class="right__column">
+                <a href="#">
+                    <div class="right__top__offer">
+                        <div class="white__block">
+                            <div class="offer__message">
+                                <p class="offer__text black_p">30% offer</p>
+                                <p class="offer__text pink_p">women</p>
                             </div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="right__bottom__offer">
-                            <div class="white__block">
-                                <div class="offer__message">
-                                    <p class="offer__text black_p">new arrivals</p>
-                                    <p class="offer__text pink_p">for kids</p>
-                                </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="right__bottom__offer">
+                        <div class="white__block">
+                            <div class="offer__message">
+                                <p class="offer__text black_p">new arrivals</p>
+                                <p class="offer__text pink_p">for kids</p>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </main>
+    </div>
+
+    <section class="container">
+        <div class="items__section">
+            <h2 class="items__heading">Featured Items</h2>
+            <p class="items__description">Shop for items based on what we featured in this week</p>
+        </div>
+        <div class="items">
+            <div class="item">
+                <a href="#"><img src="image/Layer_2.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>
+            <div class="item">
+                <a href="#"><img src="image/Layer_3.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item">
+                <a href="#"><img src="image/Layer_4.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item last">
+                <a href="#"><img src="image/Layer_5.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item bottom">
+                <a href="#"><img src="image/Layer_6.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item bottom">
+                <a href="#"><img src="image/Layer_7.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item bottom">
+                <a href="#"><img src="image/Layer_8.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>                    
+            <div class="item bottom last">
+                <a href="#"><img src="image/Layer_9.png" alt="t-shirt"></a>
+                <a href="#"><span class="item__name">Mango  People  T-shirt</span></a>
+                <span class="item__price">$52.00</span>
+            </div>
+        </div>
+        <a class="product__button" href="#">
+            <div class="all__prod">
+                <span>Browse All Product</span>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+        </a>
+    </section>
+    <section class="container">
+        <div class="offer__box">
+            <div class="offer__left">
+                <p class="main__offer">30% <span>offer</span></p>
+                <p class="main__offer offer__bottom">for women</p>
+            </div>
+            <div class="offer__right">
+                <div class="condition">
+                    <img src="image/Forma_delivery.png" alt="delivery" class="img__conditions">
+                    <div class="text__conditions">
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="condition">
+                    <img src="image/Forma_delivery.png" alt="delivery" class="img__conditions">
+                    <div class="text__conditions">
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="condition">
+                    <img src="image/Forma_delivery.png" alt="delivery" class="img__conditions">
+                    <div class="text__conditions">
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <!--                 <div class="offer__icons">
+                    <img src="image/Forma_delivery.png" alt="delivery">
+                    <img src="image/Forma_sale.png" alt="sale">
+                    <img src="image/Forma_crown.png" alt="quality">
+                </div>
+                <div class="conditions">
+                    <div class="text__conditions">
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                    <div class="text__conditions">
+                        <h2>Sales & discounts</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                    <div class="text__conditions">
+                        <h2>Quality assurance</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bottom__banner">
+
+        </div>
+    </section>
 </body>
 </html>
