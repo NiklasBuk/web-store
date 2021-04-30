@@ -517,9 +517,8 @@ div a img {
 
 .offer__right {
     display: flex;
-    flex-direction: column;
     max-width: 373px;
-    padding: 43px 36px;
+    height: 529px;
 }
 
 .main__offer {
@@ -546,18 +545,16 @@ div a img {
 .offer__icons {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 33px 138px 36px;
 }
-
-.condition {
-    display: flex;
-}
-
-.img__conditions {}
 
 .text__conditions {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 55px 37px 7px 0;
 }
 
 .text__conditions h2 {
@@ -583,5 +580,19 @@ div a img {
 .bottom__banner {
     margin: 97px 0 0 0;
     height: 438px;
-    background: url(image/bottom-banner.png), rgba(242, 242, 242, 0.2);
+    background: rgba(242, 242, 242, 0.4) url(image/bottom-banner.png) 50%/cover no-repeat;
+    background-blend-mode: color;
+}
+
+.mention__area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review {
+    display: flex;
+}
+
+.text__review p {
+    margin: 0 0 20px 0;
 }
