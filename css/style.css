@@ -1,3 +1,4 @@
+/* Обнуление стилей */
 * {
    padding: 0;
    margin: 0;
@@ -77,6 +78,8 @@ h6 {
    font-weight: 400;
 }
 
+/*------------------*/
+
 details:hover {
    cursor: pointer;
 }
@@ -97,7 +100,7 @@ footer {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
    border-bottom: 1px solid #ececec;
    background-color: #ffffff;
-   padding-bottom: 24px;
+   padding: 0 0 24px 0;
 }
 
 .header__top {
@@ -106,7 +109,7 @@ footer {
 }
 
 .header__left {
-   padding-top: 25px;
+   padding: 25px 0 0 0;
    display: flex;
 }
 
@@ -117,7 +120,7 @@ footer {
 }
 
 .logo {
-   margin-right: 13px;
+   margin: 0 13px 0 0;
 }
 
 .name__logo {
@@ -176,21 +179,6 @@ details>summary::-webkit-details-marker {
    padding: 12px 0 12px 15px;
 }
 
-.fa-caret-down {
-   color: #838383;
-   font-family: "Font Awesome 5 Free";
-   font-size: 14px;
-   font-weight: 400;
-   line-height: 32px;
-   letter-spacing: 0.35px;
-   padding: 12px 8px;
-}
-
-.caret-account {
-   color: #ffffff;
-   padding-right: 12px;
-}
-
 .search__area {
    border-radius: 0 3px 3px 0;
    border: 1px solid #e6e6e6;
@@ -239,13 +227,40 @@ input[type="search"]::-webkit-search-results-decoration {
    display: none;
 }
 
+.caret-account {
+   color: #ffffff;
+   padding-right: 12px;
+}
+
+.fa-caret-down {
+   color: #838383;
+   font-family: "Font Awesome 5 Free";
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 32px;
+   letter-spacing: 0.35px;
+   padding: 12px 12px;
+}
+
+.account:hover {
+   background-color: #ffffff;
+   color: #f16d7f;
+   border-color: #f16d7f;
+}
+
+.fa-caret-down:hover {
+   color: inherit;
+}
+
 .header__right {
    display: flex;
-   align-items: center;
+   align-content: center;
    padding-top: 31px;
 }
 
 .cart__pic {
+   display: flex;
+   align-items: center;
    padding-right: 26px;
 }
 
@@ -261,14 +276,8 @@ input[type="search"]::-webkit-search-results-decoration {
    border-color: #ffffff;
 }
 
-.account:hover {
-   background-color: #ffffff;
-   color: #f16d7f;
-   border-color: #f16d7f;
-}
-
-.fa-caret-down:hover {
-   color: inherit;
+.account .fa-caret-down {
+   color: #ffffff;
 }
 
 .header__bottom__box {
@@ -290,6 +299,7 @@ input[type="search"]::-webkit-search-results-decoration {
    text-transform: uppercase;
    font-size: 14px;
    font-weight: 700;
+   padding: 20px 15px;
 }
 
 .main__banner {
@@ -491,6 +501,7 @@ div a img {
    text-align: center;
    letter-spacing: 0.4px;
    background-color: #f16d7f;
+   border: solid 1px #ffffff;
    padding: 18px 18px 18px 24px;
 }
 
@@ -502,6 +513,12 @@ div a img {
    text-align: center;
    letter-spacing: 0.38px;
    margin: 0 0 0 10px;
+}
+
+.all__prod:hover {
+   color: #f16d7f;
+   border: solid 1px #f16d7f;
+   background: #ffffff;
 }
 
 .offer__box {
@@ -554,7 +571,7 @@ div a img {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   padding: 55px 37px 7px 0;
+   margin: 52px 37px 0 0;
 }
 
 .text__conditions h2 {
@@ -575,6 +592,7 @@ div a img {
    line-height: 24px;
    text-align: left;
    letter-spacing: 0.35px;
+   margin: 12px 0 0 0;
 }
 
 .bottom__banner {
@@ -592,6 +610,7 @@ div a img {
 .review {
    display: flex;
    width: 50%;
+   height: 438px;
    padding: 111px 72px 0 0;
    border-right: solid 1px #ffffff;
 }
