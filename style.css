@@ -261,13 +261,13 @@ input[type="search"]::-webkit-search-results-decoration {
     border-color: #ffffff;
 }
 
-.account:active {
+.account:hover {
     background-color: #ffffff;
     color: #f16d7f;
     border-color: #f16d7f;
 }
 
-.fa-caret-down:active {
+.fa-caret-down:hover {
     color: inherit;
 }
 
