@@ -602,8 +602,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .bottom__banner {
    margin: 97px 0 0 0;
    height: 438px;
-   background: rgba(242, 242, 242, 0.4) url(../image/bottom-banner.png) 50%/cover no-repeat;
-   background-blend-mode: color;
+   background: linear-gradient(rgba(242, 242, 242, 0.4), rgba(242, 242, 242, 0.4)), url(../image/bottom-banner.png) 50%/cover no-repeat;
 }
 
 .mention__area {
@@ -613,10 +612,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .review {
    display: flex;
+   flex-direction: column;
    width: 50%;
    height: 438px;
    padding: 111px 72px 0 0;
    border-right: solid 1px #ffffff;
+}
+
+.review figure {
+   display: flex;
 }
 
 .text__review {
@@ -659,6 +663,11 @@ input[type="search"]::-webkit-search-results-decoration {
    line-height: 14px;
 }
 
+
+.radio__area {
+   margin: 0 0 0 110px;
+}
+
 .custom__radio {
    display: inline-flex;
    position: absolute;
@@ -678,7 +687,7 @@ input[type="search"]::-webkit-search-results-decoration {
    width: 38px;
    height: 4px;
    background: #d6d6d6;
-   margin: 40px 0 0 28px;
+   margin: 40px 13px 0 0;
    flex-shrink: 0;
    flex-grow: 0;
 }
