@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="image/logo.svg">
 	<title>BRAND</title>
 </head>
@@ -242,7 +244,7 @@
                      </div>
                   </li>
                   <li class="menu__list">
-                     <a class="menu__position" href="#">woman</a>
+                     <a class="menu__position mega__item__bdr" href="#">woman</a>
                      <div class="mega__box">
                         <div class="mega__box__img">
                            <div class="menu__box__offer">
@@ -512,124 +514,111 @@
          </div>
       </div>
    </div>
-   <div class="single__item__box">
-      <div class="item__button">
-         <button class="left__item__button"><i class="fa fa-angle-left"></i></button>
-         <button class="right__item__button"><i class="fa fa-angle-right"></i></button>   
-      </div>
-      <div class="container">
-         <div class="single__item__self">
-            <img class="single__item" src="image/single-item1.png" alt="item">
-         </div>
-      </div>
-   </div>
    <div class="container">
-      <div class="collection__block">
-         <div class="collection__details">
-            <h2 class="collection__heading">WOMEN COLLECTION</h2>
-            <span class="pink__border"></span>
-            <h3 class="single__name">Moschino Cheap And Chic</h3>
-            <p class="single__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
-            <div class="single__details">
-               <p>MATERIAL: <span>COTTON</span></p>
-               <p>DESIGNER: <span>BINBURHAN</span></p>
-            </div>
-            <p class="single__price">$561</p>
-         </div>
-         <form action="#">
-            <div class="choosing__block">
-               <div class="choose">
-                  <h3 class="choose__heading">choose color</h3>
-                  <select name="color">
-                     <option selected class="value" value="red">Red</option>
-                     <option class="value" value="white">White</option>
-                     <option class="value" value="grey">Grey</option>
-                  </select>
+      <div class="checkout__box">
+         <details>
+            <summary class="checkout__head">01. Shipping Adress</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <div class="checkout__reg">
+                     <h3 class="checkout__heading">Check as a guest or register</h3>
+                     <p class="checkout__text">Register with us for future convenience</p>
+                     <div class="checkout__input">
+                        <div class="checkout__register">
+                           <input id="ch1" type="radio" name="register__type">
+                           <label for="ch1" class="checkout__subtitle">checkout as guest</label>
+                        </div>
+                        <div class="checkout__register">
+                           <input id="ch2" checked type="radio" name="register__type">
+                           <label for="ch2" class="checkout__subtitle">register</label>
+                        </div>
+                     </div>
+                     <h3 class="checkout__heading">register and save time!</h3>
+                     <p class="checkout__text">Register with us for future convenience</p>
+                     <div class="checkout__recomend">
+                        <a href="#">
+                           <i class="fa fa-angle-double-right"></i>
+                           <p class="checkout__text">Fast and easy checkout</p></a>
+                     </div>
+                     <div class="checkout__recomend">
+                        <a href="#">
+                           <i class="fa fa-angle-double-right"></i>
+                           <p class="checkout__text">Easy access to your order history and status</p></a>
+                     </div>
+                     <button class="checkout__btn" type="submit">Continue</button>
+                  </div>
                </div>
-               <div class="choose">
-                  <h3 class="choose__heading">choose size</h3>
-                  <select name="size">
-                     <option class="value" value="s">S</option>
-                     <option class="value" value="m">M</option>
-                     <option class="value" value="l">L</option>
-                     <option class="value" value="xl">XL</option>
-                     <option selected class="value" value="xxl">XXL</option>
-                  </select>
-               </div>
-               <div class="choose">
-                  <h3 class="choose__heading">quantity</h3>
-                  <select name="quantity">
-                     <option class="value" value="1">1</option>
-                     <option selected class="value" value="2">2</option>
-                     <option class="value" value="3">3</option>
-                     <option class="value" value="4">4</option>
-                     <option class="value" value="5">5</option>
-                  </select>
+               <div class="checkout__right">
+                  <h3 class="checkout__heading">Already registered?</h3>
+                  <p class="checkout__text">Please log in below</p>
+                  <form class="checkout__signup" action="#">
+                     <div class="checkout__data">
+                        <p class="checkout__subtitle">EMAIL ADDRESS</p>
+                        <input class="checkout__input__area" type="text" name="username">
+                     </div>
+                     <div class="checkout__data">
+                        <p class="checkout__subtitle">PASSWORD</p>
+                        <input class="checkout__input__area" type="password" name="userpass">
+                     </div>
+                     <p class="checkout__alert">* Required Fields</p>
+                     <div class="checkout__login">
+                        <button class="checkout__btn" type="submit">Log in</button>
+                        <a class="checkout__help" href="#">Forgot Password?</a>
+                     </div>
+                  </form>
                </div>
             </div>
-            <div class="button__block">
-               <button class="purchase__button" type="submit">
-                  <img src="image/cart.svg" alt="cart">
-                  <span>Add to Cart</span>
-               </button>
+         </details>
+         <details>
+            <summary class="checkout__head">02. BILLING INFORMATION</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <h3 class="checkout__heading">some more checkout options</h3>
+                  <p class="checkout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui accusamus eligendi reprehenderit fugit culpa repellendus esse rerum ipsum eius.</p>
+               </div>
             </div>
-         </form>
+         </details>
+         <details>
+            <summary class="checkout__head">03. SHIPPING INFORMATION</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <h3 class="checkout__heading">some more checkout options</h3>
+                  <p class="checkout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui accusamus eligendi reprehenderit fugit culpa repellendus esse rerum ipsum eius.</p>
+               </div>
+            </div>
+         </details>
+         <details>
+            <summary class="checkout__head">04. SHIPPING METHOD</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <h3 class="checkout__heading">some more checkout options</h3>
+                  <p class="checkout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui accusamus eligendi reprehenderit fugit culpa repellendus esse rerum ipsum eius.</p>
+               </div>
+            </div>
+         </details>
+         <details>
+            <summary class="checkout__head">05. PAYMENT METHOD</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <h3 class="checkout__heading">some more checkout options</h3>
+                  <p class="checkout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui accusamus eligendi reprehenderit fugit culpa repellendus esse rerum ipsum eius.</p>
+               </div>
+            </div>
+         </details>
+         <details>
+            <summary class="checkout__head">06. ORDER REVIEW</summary>
+            <div class="checkout__content">
+               <div class="checkout__left">
+                  <h3 class="checkout__heading">some more checkout options</h3>
+                  <p class="checkout__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui accusamus eligendi reprehenderit fugit culpa repellendus esse rerum ipsum eius.</p>
+               </div>
+            </div>
+         </details>
       </div>
    </div>
 
-   <section>
-      <div class="container">
-         <h3 class="like__heading">you may like also</h3>
-            <div class="also__box">
-               <div class="items">
-                  <div class="item">
-                     <a class="product" href="#">
-                        <div class="pic__back">
-                           <img class="item__pic" src="image/also-item1.png" alt="item">
-                        </div>
-                        <div class="product__text">
-                           <p class="item__name">Mango  People  T-shirt</p>
-                           <p class="item__price">$52.00</p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="item">
-                     <a class="product" href="#">
-                        <div class="pic__back">
-                           <img class="item__pic" src="image/also-item2.png" alt="item">
-                           </div>
-                        <div class="product__text">
-                           <p class="item__name">Mango  People  T-shirt</p>
-                           <p class="item__price">$52.00</p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="item">
-                     <a class="product" href="#">
-                        <div class="pic__back">
-                           <img class="item__pic" src="image/also-item3.png" alt="item">
-                        </div>
-                        <div class="product__text">
-                           <p class="item__name">Mango  People  T-shirt</p>
-                           <p class="item__price">$52.00</p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="item">
-                     <a class="product" href="#">
-                        <div class="pic__back">
-                           <img class="item__pic" src="image/also-item4.png" alt="item">
-                        </div>
-                        <div class="product__text">
-                           <p class="item__name">Mango  People  T-shirt</p>
-                           <p class="item__price">$52.00</p>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-      </div>
-   </section>
+
+
 
    <div class="bottom__banner">
       <div class="container">
