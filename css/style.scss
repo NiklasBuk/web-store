@@ -1448,8 +1448,9 @@ div.header__logo {
 }
 
 .choose select {
-   border: $widthbd solid #eaeaea;
-   padding: 8px 75px 8px 12px;
+   border: 1px solid #eaeaea;
+   padding: 9px 75px 9px 8px;
+   min-width: 133px;
 }
 
 .product__menu {
@@ -2224,4 +2225,93 @@ details .shipping__country {
 .proceed__btn:hover {
    background: #ffffff;
    color: $pinkie;
+}
+
+.choose__menu {
+   position: relative;
+}
+
+.choose__option {
+   border: 1px solid #eaeaea;
+   font-family: Lato;
+   font-size: 13px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #bcbcbc;
+   position: relative;
+   padding: 6px 5px 5px 31px;
+}
+
+.choose__option:before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: #ef5b70;
+   display: block;
+   position: absolute;
+   top: 10px;
+   left: 10px;
+}
+
+.choose__text {
+   display: flex;
+   justify-content: space-between;
+}
+
+.choose__text i {
+   transform: rotate(270deg);
+   font-size: 14px;
+   line-height: 23px;
+   font-weight: 400;
+   color: #bcbcbc;
+   margin: 0 0 0 68px;
+}
+
+.choose__color {
+   display: flex;
+   width: 108px;
+   flex-direction: column;
+   padding: 0 30px;
+   border: 1px solid #eaeaea;
+   font-family: Lato;
+   font-size: 13px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #bcbcbc;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+   position: absolute;
+   background: #ffffff;
+}
+
+.choose__color__block:nth-child(1):before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: green;
+   display: block;
+   position: absolute;
+   top: 7px;
+   left: 10px;
+}
+
+.choose__color__block:nth-child(2):before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: blue;
+   display: block;
+   position: absolute;
+   top: 31px;
+   left: 10px;
+}
+
+.choose__color__block:nth-child(3):before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   background:grey;
+   display: block;
+   position: absolute;
+   top: 55px;
+   left: 10px;
 }
