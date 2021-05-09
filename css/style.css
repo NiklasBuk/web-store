@@ -2245,7 +2245,7 @@ details.product__acco[open] .product__heading:hover i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0 20px 0;
-  border-bottom: 1px solid #b3b2b2;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .shopping__char {
