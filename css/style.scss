@@ -348,8 +348,10 @@ input[type="search"]::-webkit-search-results-decoration {
 button.cart__checkout {
    color: $pinkie;
    border: $widthbd solid $pinkie;
-   background-color: #ffffff;
+   background: #ffffff;
    padding: 19px 74px;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 a.cart__checkout {
@@ -381,6 +383,8 @@ button.cart__checkout:hover {
    letter-spacing: 0.38px;
    background-color: $pinkie;
    border: $widthbd solid #ffffff;
+   transition: color 0.3s;
+   transition: background 0.2s;
 }
 
 .account .fa-caret-down {
@@ -748,6 +752,8 @@ button.cart__checkout:hover {
    background-color: $pinkie;
    border: $widthbd solid #ffffff;
    padding: 18px 18px 18px 24px;
+   transition: color 0.3s;
+   transition: background 0.2s;
 }
 
 .fa-long-arrow-right {
@@ -935,14 +941,17 @@ button.cart__checkout:hover {
    margin: 40px 13px 0 0;
    flex-shrink: 0;
    flex-grow: 0;
+   transition: background 0.3s;
 }
 
 .custom__radio:checked+label::before {
    background: $pinkie;
+
 }
 
 .custom__radio:not(:disabled):not(:checked)+label:hover::before {
    background: #ffffff;
+   transition: background 0.3s;
 }
 
 .subscription {
@@ -991,6 +1000,8 @@ button.cart__checkout:hover {
    border-radius: 0 23px 23px 0;
    background-color: $pinkie;
    padding: 16px 20px;
+   transition: color 0.3s;
+   transition: background 0.2s;
 }
 
 .subscribe__area button:hover {
@@ -1047,6 +1058,7 @@ div.header__logo {
 .footer__list li a {
    color: #898989;
    list-style: none;
+   transition: color 0.2s;
 }
 
 .footer__list li a:hover {
@@ -1082,6 +1094,8 @@ div.header__logo {
    background: #ffffff;
    margin: 4px;
    color: #b2b2b2;
+   transition: color 0.4s;
+   transition: background 0.3s;
 }
 
 .social__button:hover {
@@ -1302,6 +1316,8 @@ div.header__logo {
    font-weight: 700;
    display: flex;
    align-self: center;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 .purchase__button span {
@@ -1400,6 +1416,8 @@ div.header__logo {
    position: relative;
    display: flex;
    justify-content: space-between;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 .product__heading:before {
@@ -1457,6 +1475,7 @@ details.product__acco[open] .product__heading:hover i {
 
 .product__link {
    color: #6f6e6e;
+   transition: color 0.2s;
 }
 
 .product__link:hover {
@@ -1646,6 +1665,7 @@ details.product__acco[open] .product__heading:hover i {
    font-size: 16px;
    font-weight: bold;
    line-height: 26px;
+   transition: color 0.2s;
 }
 
 .changer__list span {
@@ -1667,6 +1687,8 @@ details.product__acco[open] .product__heading:hover i {
    color: $pinkie;
    border: $widthbd solid $pinkie;
    box-sizing: border-box;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 .product__all__button:hover a {
@@ -1812,6 +1834,8 @@ details.product__acco[open] .product__heading:hover i {
    border: $widthbd solid #eaeaea;
    padding: 19px 54px;
    margin: 38px 0 0 0;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 .checkout__btn:hover {
@@ -1989,6 +2013,8 @@ details.product__acco[open] .product__heading:hover i {
    padding: 20px 40px;
    background-color: #ffffff;
    border: $widthbd solid #eaeaea;
+   transition: color 0.3s;
+   transition: background 0.2s;
 }
 
 .shopping__btn:hover {
@@ -2083,6 +2109,8 @@ details .shipping__country {
    padding: 12px 15px;
    border: $widthbd solid #eaeaea;
    margin: 0 0 80px 0;
+   transition: color 0.2s;
+   transition: background 0.3s;
 }
 
 .shipping__quote:hover {
@@ -2146,6 +2174,8 @@ details .shipping__country {
    padding: 20px 42px;
    margin: 20px 0 0 0;
    border: $widthbd solid $pinkie;
+   transition: color 0.3s;
+   transition: background 0.2s;
 }
 
 .proceed__btn:hover {
