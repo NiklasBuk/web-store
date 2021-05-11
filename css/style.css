@@ -437,7 +437,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .fa-times-circle {
   color: #c0c0c0;
-  font-family: "Font Awesome";
 }
 
 .total__price {
@@ -2249,10 +2248,18 @@ details.product__acco[open] .product__heading:hover i {
   border-bottom: 1px solid #eaeaea;
 }
 
-.shopping__char {
+.shopping__details-left {
+  width: 40%;
+}
+
+.shopping__details-right {
+  width: 59%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shopping__heading {
@@ -2265,8 +2272,26 @@ details.product__acco[open] .product__heading:hover i {
   color: #222222;
 }
 
-.shopping__char .shopping__heading {
-  margin: 0 0 0 80px;
+.shopping__char {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 57%;
+}
+
+.shopping__paddinger {
+  width: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .shopping__item {
@@ -2312,19 +2337,6 @@ details.product__acco[open] .product__heading:hover i {
   font-weight: bold;
 }
 
-.shopping__item__char {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 630px;
-}
-
 .shopping__item__char button {
   background: inherit;
 }
@@ -2349,10 +2361,9 @@ details.product__acco[open] .product__heading:hover i {
   font-size: 13px;
   font-weight: 400;
   color: #656565;
-  margin: 0 20px 0 10px;
 }
 
-.char__text:nth-child(2) {
+.shopping__item_bdr {
   border: 1px solid #eaeaea;
   padding: 10px 24px;
 }
@@ -2600,7 +2611,7 @@ details .shipping__country {
   content: "";
   width: 12px;
   height: 12px;
-  background: #ef5b70;
+  background: #f16d7f;
   display: block;
   position: absolute;
   top: 10px;
