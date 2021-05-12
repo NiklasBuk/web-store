@@ -484,6 +484,8 @@ a.cart__checkout {
   color: #4a4a4a;
   border: 1px solid #eaeaea;
   padding: 20px 71px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 button.cart__checkout:hover {
