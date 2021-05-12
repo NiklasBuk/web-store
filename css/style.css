@@ -853,9 +853,20 @@ button.cart__checkout:hover {
   text-decoration: none;
 }
 
+.product div {
+  overflow: hidden;
+}
+
 .item__pic {
   width: 100%;
   max-height: 278px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.item__pic:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .product__text {
