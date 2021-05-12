@@ -151,6 +151,7 @@ details>summary {
    font-weight: 400;
    line-height: 28px;
    letter-spacing: 0.35px;
+   transition: color 0.2s;
 }
 
 .dropdown__link:hover {
@@ -359,6 +360,7 @@ a.cart__checkout {
    border: $widthbd solid #eaeaea;
    padding: 20px 71px;
    transition: color 0.3s;
+   transition: background 0.3s;
 }
 
 button.cart__checkout:hover {
@@ -412,7 +414,7 @@ button.cart__checkout:hover {
    text-transform: uppercase;
    font-size: 14px;
    font-weight: 700;
-   padding: 20px 15px;
+   padding: 20px;
 }
 
 .mega__box {
@@ -426,8 +428,12 @@ button.cart__checkout:hover {
    border: $widthbd solid #e8e8e8;
    border-radius: 5px;
    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-   display: none;
+   display: flex;
    z-index: 1;
+   visibility: hidden;
+   opacity: 0;
+   transform: translate(0,-10px);
+   transition: opacity 0.3s ease;
 }
 
 .mega__box:before {
@@ -495,7 +501,9 @@ button.cart__checkout:hover {
 }
 
 .menu__list:hover .mega__box {
-   display: flex;
+   visibility: visible;
+   transform: translate(0);
+   opacity: 1;
 }
 
 .last:hover .mega__box {
