@@ -1,9 +1,9 @@
-const $goodsList = document.querySelector('.items');
+const $allGoodsList = document.querySelector('.product__all');
 
-const renderItems = ({title, price, img}) => {
+function renderItems ({title, price, img}) {
    return `<div class="item">
    <a class="product" href="single-page.html">
-      <div>
+      <div class="pic__back">
          <img class="item__pic" src="${img}" alt="item">
       </div>
       <div class="product__text">
@@ -20,12 +20,12 @@ const renderItems = ({title, price, img}) => {
 </div>`
 };
 
-const renderGoodsList = (list = goods) => {
+function renderGoodsList (list, selector) {
    let goodsList = list.map(
       item => renderItems(item)
    ).join('');
 
-   $goodsList.insertAdjacentHTML('beforeend', goodsList);
+   selector.insertAdjacentHTML('beforeend', goodsList);
 }
 
-renderGoodsList();
+renderGoodsList(allGoods, $allGoodsList);
