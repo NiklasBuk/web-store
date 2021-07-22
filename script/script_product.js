@@ -1,14 +1,18 @@
-const $allGoodsList = document.querySelector('.product__all');
-
-function renderItems ({title, price, img}) {
-   return `<div class="item">
+class Item {
+   constructor(title, price, img) {
+      this._title = title;
+      this._price = price;
+      this._img = img;
+   }
+   render() {
+      return `<div class="item">
    <a class="product" href="single-page.html">
       <div class="pic__back">
-         <img class="item__pic" src="${img}" alt="item">
+         <img class="item__pic" src="${this._img}" alt="item">
       </div>
       <div class="product__text">
-         <p class="item__name">${title}</p>
-         <p class="item__price">$${price}</p>
+         <p class="item__name">${this._title}</p>
+         <p class="item__price">$${this._price}</p>
       </div>
    </a>
    <div class="box__add">
@@ -18,14 +22,32 @@ function renderItems ({title, price, img}) {
       </a>
    </div>
 </div>`
-};
-
-function renderGoodsList (list, selector) {
-   let goodsList = list.map(
-      item => renderItems(item)
-   ).join('');
-
-   selector.insertAdjacentHTML('beforeend', goodsList);
+   }
 }
 
-renderGoodsList(allGoods, $allGoodsList);
+class goodsList {
+   constructor(goods, container) {
+      this._goods = goods;
+      this._$goodsListContainer = container;
+   }
+   renderGoodsList() {
+      let goodsList = this._goods.map(
+         item => item.render()
+      ).join('');
+      this._$goodsListContainer.insertAdjacentHTML('beforeend', goodsList);
+   }
+}
+
+let list = new goodsList([
+      new Item('Mango People T-shirt', 52.00, 'image/product1.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product2.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/Layer_4.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product4.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product5.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product6.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product7.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product8.png'),
+      new Item('Mango People T-shirt', 52.00, 'image/product9.png'),
+   ], document.querySelector('.product__all'));
+
+list.renderGoodsList();

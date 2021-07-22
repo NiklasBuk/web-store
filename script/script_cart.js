@@ -39,23 +39,27 @@ class ItemToBuy extends Item {
       return this._price * this.quantity;
    }
    render() {
-      return `<div class="item">
-   <a class="product" href="single-page.html">
-      <div class="pic__back">
-         <img class="item__pic" src="${this._img}" alt="item">
+      return `<div class="shopping__single">
+      <div class="shopping__item">
+         <a href="single-page.html"><img src="${img}" alt="product"></a>
+         <div class="item__prop">
+            <a href="single-page.html" class="item__prop__heading">${title}</a>
+            <div class="item__prop__all">
+               <p class="item__prop__text"><span>Color:</span> Red</p>
+               <p class="item__prop__text"><span>Size:</span> XXL</p>
+            </div>
+         </div>
       </div>
-      <div class="product__text">
-         <p class="item__name">${this._title}</p>
-         <p class="item__price">$${this._price}</p>
+      <div class="shopping__item__char shopping__char">
+         <p class="char__text shopping__paddinger">$${price}</p>
+         <p class="char__text shopping__paddinger shopping__item_bdr">${quantity}</p>
+         <p class="char__text shopping__paddinger">FREE</p>
+         <p class="char__text shopping__paddinger">$${getPrice()}</p>
+         <button class="shopping__paddinger" type="reset">
+            <i class="fa fa-times-circle char__text"></i>
+         </button>
       </div>
-   </a>
-   <div class="box__add">
-      <a class="add" href="#">
-         <img class="add__cart" src="image/cart.svg" alt="add">
-         Add to Cart
-      </a>
-   </div>
-</div>`
+   </div>`
    }
 }
 
@@ -73,14 +77,9 @@ class goodsList {
 }
 
 let list = new goodsList([
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_2.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_3.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_4.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_5.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_6.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_7.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_8.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_9.png'),
-   ], document.querySelector('.feat-items'));
+      new ItemToBuy('Mango People T-shirt', 150.00, 'image/product1preview.png', 1),
+      new ItemToBuy('Mango People T-shirt', 150.00, 'image/product2preview.png', 1),
+      new ItemToBuy('Mango People T-shirt', 150.00, 'image/product3preview.png', 1),
+   ], document.querySelector('.shopping__cart'));
 
 list.renderGoodsList();
