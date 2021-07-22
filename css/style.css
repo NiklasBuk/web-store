@@ -932,6 +932,11 @@ input[type="search"]::-webkit-search-results-decoration {
           filter: brightness(50%);
 }
 
+.item:hover .pic__back {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
 .add:hover {
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 10px #fff;
@@ -1697,11 +1702,6 @@ input[type="search"]::-webkit-search-results-decoration {
           justify-content: center;
 }
 
-.also__box .item:hover .item__pic {
-  -webkit-filter: brightness();
-          filter: brightness();
-}
-
 .left__item__button {
   position: absolute;
   top: 45%;
@@ -1993,11 +1993,6 @@ details.product__acco[open] .product__heading:hover i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.product__all .item:hover .item__pic {
-  -webkit-filter: brightness();
-          filter: brightness();
 }
 
 .product__pages {
