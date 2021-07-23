@@ -4,6 +4,11 @@ class Item {
       this._price = price;
       this._img = img;
    }
+
+   getPrice() {
+      return this._price;
+   }
+   
    render() {
       return `<div class="item">
    <a class="product" href="single-page.html">
