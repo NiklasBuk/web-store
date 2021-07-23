@@ -77,6 +77,6 @@ let list = new goodsList([
    new Item('Mango People T-shirt', 52.00, 'image/also-item2.png'),
    new Item('Mango People T-shirt', 52.00, 'image/also-item3.png'),
    new Item('Mango People T-shirt', 52.00, 'image/also-item4.png'),
-   ], document.querySelector('.also-items'));
+], document.querySelector('.also-items'));
 
 list.renderGoodsList();

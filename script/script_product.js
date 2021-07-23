@@ -73,15 +73,15 @@ class goodsList {
 }
 
 let list = new goodsList([
-      new Item('Mango People T-shirt', 52.00, 'image/product1.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product2.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/Layer_4.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product4.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product5.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product6.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product7.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product8.png'),
-      new Item('Mango People T-shirt', 52.00, 'image/product9.png'),
-   ], document.querySelector('.product__all'));
+   new Item('Mango People T-shirt', 52.00, 'image/product1.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product2.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/Layer_4.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product4.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product5.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product6.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product7.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product8.png'),
+   new Item('Mango People T-shirt', 52.00, 'image/product9.png'),
+], document.querySelector('.product__all'));
 
 list.renderGoodsList();
