@@ -25,6 +25,35 @@ class Item {
    }
 }
 
+class ItemToBuy extends Item {
+   constructor(title, price, img, quantity = 1) {
+      super(title, price, img);
+      this._quantity = quantity;
+   }
+   getPrice() {
+      return this._price * this.quantity;
+   }
+   render() {
+      return `<div class="item">
+   <a class="product" href="single-page.html">
+      <div class="pic__back">
+         <img class="item__pic" src="${this._img}" alt="item">
+      </div>
+      <div class="product__text">
+         <p class="item__name">${this._title}</p>
+         <p class="item__price">$${this._price}</p>
+      </div>
+   </a>
+   <div class="box__add">
+      <a class="add" href="#">
+         <img class="add__cart" src="image/cart.svg" alt="add">
+         Add to Cart
+      </a>
+   </div>
+</div>`
+   }
+}
+
 class goodsList {
    constructor(goods, container) {
       this._goods = goods;
