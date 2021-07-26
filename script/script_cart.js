@@ -30,6 +30,7 @@ class Item {
    }
 }
 
+
 class ItemToBuy extends Item {
    constructor(title, price, img, quantity = 1) {
       super(title, price, img);
@@ -65,11 +66,13 @@ class ItemToBuy extends Item {
    }
 }
 
+
 class goodsList {
    constructor(goods, container) {
       this._goods = goods;
       this._$goodsListContainer = container;
    }
+
    renderGoodsList() {
       let goodsList = this._goods.map(
          item => item.render()
@@ -77,6 +80,7 @@ class goodsList {
       this._$goodsListContainer.insertAdjacentHTML('beforeend', goodsList);
    }
 }
+
 
 let list = new goodsList([
    new ItemToBuy('Mango People T-shirt', 150, 'image/product1preview.png', 1),

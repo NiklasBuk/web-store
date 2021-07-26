@@ -1,5 +1,6 @@
 class Item {
-   constructor(title, price, img) {
+   constructor({id, title, price, img}) {
+      this._id = id;
       this._title = title;
       this._price = price;
       this._img = img;
@@ -10,7 +11,7 @@ class Item {
    }
 
    render() {
-      return `<div class="item">
+      return `<div class="item" id="${this._id}">
    <a class="product" href="single-page.html">
       <div class="pic__back">
          <img class="item__pic" src="${this._img}" alt="item">
@@ -30,14 +31,17 @@ class Item {
    }
 }
 
+
 class ItemToBuy extends Item {
    constructor(title, price, img, quantity = 1) {
       super(title, price, img);
       this._quantity = quantity;
    }
+
    getPrice() {
       return this._price * this.quantity;
    }
+
    render() {
       return `<div class="item">
    <a class="product" href="single-page.html">
@@ -59,11 +63,17 @@ class ItemToBuy extends Item {
    }
 }
 
+
 class goodsList {
-   constructor(goods, container) {
-      this._goods = goods;
+   constructor(container) {
+      this._goods = [];
       this._$goodsListContainer = container;
    }
+
+   add(good) {
+      this._goods.push(good);
+   }
+
    renderGoodsList() {
       let goodsList = this._goods.map(
          item => item.render()
@@ -72,15 +82,22 @@ class goodsList {
    }
 }
 
-let list = new goodsList([
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_2.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_3.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_4.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_5.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_6.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_7.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_8.png'),
-   new Item('Mango People T-shirt', 52.00, 'image/Layer_9.png'),
-], document.querySelector('.feat-items'));
 
-list.renderGoodsList();
+let list = new goodsList(document.querySelector('.feat-items'));
+
+
+fetch('../json/featured-items.json')
+   .then((response) => {
+      return response.json();
+   })
+
+   .then((response) => {
+      response.forEach(newGood => {
+         list.add(new Item(newGood));
+      })
+      list.renderGoodsList();
+   })
+
+   .catch((err) => {
+      console.log(err);
+   })
