@@ -10,6 +10,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="image/logo.svg">
+   <script src="script/script_cart.js" defer></script>
    <title>BRAND</title>
 </head>
 
@@ -515,84 +516,20 @@
       </div>
    </div>
    <div class="container">
+      <div class="shopping__contents">
+         <div class="shopping__details-left">
+            <h2 class="shopping__heading">Product Details</h2>
+         </div>
+         <div class="shopping__details-right">
+            <h2 class="shopping__heading shopping_paddinger">unite Price</h2>
+            <h2 class="shopping__heading shopping_paddinger">Quantity</h2>
+            <h2 class="shopping__heading shopping_paddinger">shipping</h2>
+            <h2 class="shopping__heading shopping_paddinger">Subtotal</h2>
+            <h2 class="shopping__heading shopping_paddinger">ACTION</h2>
+         </div>
+      </div>
       <div class="shopping__box">
-         <div class="shopping__contents">
-            <div class="shopping__details-left">
-               <h2 class="shopping__heading">Product Details</h2>
-            </div>
-            <div class="shopping__details-right">
-               <h2 class="shopping__heading shopping_paddinger">unite Price</h2>
-               <h2 class="shopping__heading shopping_paddinger">Quantity</h2>
-               <h2 class="shopping__heading shopping_paddinger">shipping</h2>
-               <h2 class="shopping__heading shopping_paddinger">Subtotal</h2>
-               <h2 class="shopping__heading shopping_paddinger">ACTION</h2>
-            </div>
-         </div>
-         <div class="shopping__cart">
-            <div class="shopping__single">
-               <div class="shopping__item">
-                  <a href="single-page.html"><img src="image/product1preview.png" alt="product"></a>
-                  <div class="item__prop">
-                     <a href="single-page.html" class="item__prop__heading">Mango  People  T-shirt</a>
-                     <div class="item__prop__all">
-                        <p class="item__prop__text"><span>Color:</span> Red</p>
-                        <p class="item__prop__text"><span>Size:</span> XXL</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="shopping__item__char shopping__char">
-                  <p class="char__text shopping__paddinger">$150</p>
-                  <p class="char__text shopping__paddinger shopping__item_bdr">2</p>
-                  <p class="char__text shopping__paddinger">FREE</p>
-                  <p class="char__text shopping__paddinger">$300</p>
-                  <button class="shopping__paddinger" type="reset">
-                     <i class="fa fa-times-circle char__text"></i>
-                  </button>
-               </div>
-            </div>
-            <div class="shopping__single">
-               <div class="shopping__item">
-                  <a href="single-page.html"><img src="image/product2preview.png" alt="product"></a>
-                  <div class="item__prop">
-                     <a href="single-page.html" class="item__prop__heading">Mango  People  T-shirt</a>
-                     <div class="item__prop__all">
-                        <p class="item__prop__text"><span>Color:</span> Red</p>
-                        <p class="item__prop__text"><span>Size:</span> XXL</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="shopping__item__char shopping__char">
-                  <p class="char__text shopping__paddinger">$150</p>
-                  <p class="char__text shopping__paddinger shopping__item_bdr">2</p>
-                  <p class="char__text shopping__paddinger">FREE</p>
-                  <p class="char__text shopping__paddinger">$300</p>
-                  <button class="shopping__paddinger" type="reset">
-                     <i class="fa fa-times-circle char__text"></i>
-                  </button>
-               </div>
-            </div>
-            <div class="shopping__single">
-               <div class="shopping__item">
-                  <a href="single-page.html"><img src="image/product3preview.png" alt="product"></a>
-                  <div class="item__prop">
-                     <a href="single-page.html" class="item__prop__heading">Mango  People  T-shirt</a>
-                     <div class="item__prop__all">
-                        <p class="item__prop__text"><span>Color:</span> Red</p>
-                        <p class="item__prop__text"><span>Size:</span> XXL</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="shopping__item__char shopping__char">
-                  <p class="char__text shopping__paddinger">$150</p>
-                  <p class="char__text shopping__paddinger shopping__item_bdr">2</p>
-                  <p class="char__text shopping__paddinger">FREE</p>
-                  <p class="char__text shopping__paddinger">$300</p>
-                  <button class="shopping__paddinger" type="reset">
-                     <i class="fa fa-times-circle char__text"></i>
-                  </button>
-               </div>
-            </div>
-         </div>
+         <div class="shopping__cart"></div>
       </div>
       <div class="shopping__submit">
          <button class="shopping__btn" type="reset">cLEAR SHOPPING CART</button>

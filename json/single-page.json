@@ -1,0 +1,26 @@
+[
+   {
+      "id": 31,
+      "title": "Mango People T-shirt",
+      "price": 52.00,
+      "img": "image/also-item1.png"
+   },
+   {
+      "id": 32,
+      "title": "Mango People T-shirt",
+      "price": 52.00,
+      "img": "image/also-item2.png"
+   },
+   {
+      "id": 33,
+      "title": "Mango People T-shirt",
+      "price": 52.00,
+      "img": "image/also-item3.png"
+   },
+   {
+      "id": 34,
+      "title": "Mango People T-shirt",
+      "price": 52.00,
+      "img": "image/also-item4.png"
+   }
+]

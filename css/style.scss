@@ -1943,15 +1943,12 @@ input[type='radio']:checked::after {
    left: 7px;
 }
 
-.shopping__box {
-   margin: 90px 0 0 0;
-}
-
 .shopping__contents {
    display: flex;
    justify-content: space-between;
    padding: 0 0 20px 0;
    border-bottom: $widthbd solid #eaeaea;
+   margin: 90px 0 0 0;
 }
 
 .shopping__details-left {
